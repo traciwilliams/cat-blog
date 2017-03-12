@@ -95,6 +95,38 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+a {
+    color: #333;
+    text-decoration: none;//no underline
+}
+
+
+h2 {
+    font-size: 25px;
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    marging: 0 auto;
+    width: 80%; //percentage for responsiveness
+    overflow: hidden;//no scroll bar if something is cur off
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
