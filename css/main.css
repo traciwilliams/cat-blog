@@ -2,16 +2,19 @@ body {
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
+img {
+  max-width: 100%;
+} 
 
-.showborder {
-  border: 1px solid black;
-}
+// .showborder {
+//   border: 1px solid black;
+// }
 
 
 
 /*=============HEADER==============*/
 #header {
-  background-color: blue;
+  background-color: grey;
   border-color: black;
   float: left;
   width: 100%;
@@ -21,7 +24,7 @@ body {
 
 #header div {
   padding-left: 10px;
-  background-color: green;
+  //background-color: green;
   display: inline-block;
 }
 
@@ -29,7 +32,7 @@ body {
   padding: 0 0 0 80px;
   margin: 0;
   line-height: 45px;
-  background-color: coral;
+  //background-color: coral;
   display: inline-block;
 }
 
@@ -76,41 +79,6 @@ body {
   background-color: darkgrey;
 }
 
-
-/*=============Practice NAVIGATION==============*/
-#menu {
-  width: 550px;
-  height: 35px;
-  font-size: 16px;
-  font-family: sans-serif;
-  font-weight: bold;
-  text-align: center;
-  text-shadow: blue;
-  background-color: yellow;
-  border-radius: 8px;
-
-}
-
-#menu ul {
-  height: auto;
-  padding: 8px 0px;
-  margin: 0px;
-}
-#menu li {
-  display: inline;
-  padding: 20px;
-}
-
-#menu a {
-  text-decoration: none;
-  color: #F69;
-  padding: 8px 8px;
-}
-
-#menu a:hover {
-  color: #F90;
-  background-color: #FFF;
-}
 
 
 /*========== MEDIA QUERIES ===========*/
@@ -171,8 +139,8 @@ body {
 
 /*========== FOOTER ===========*/
 
-footer {
-  background-color: black;
+#mainfooter {
+  background-color: grey;
   color: white;
   min-height: 70px;
   padding: 15px;
