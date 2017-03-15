@@ -9,44 +9,67 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
         <!-- stylesheets-->
-        <link rel="stylesheet" href="css/normalize.css">
+       <!--  <link rel="stylesheet" href="css/normalize.css"> -->
         <link rel="stylesheet" href="css/main.css">
         <!--jQuery -->
         <script src="js/vendor/jquery-1.12.0.min.js"></script>
         <!--Modernizer -->
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <!-- <script src="js/vendor/modernizr-2.8.3.min.js"></script> -->
         <!--main JavaScript file -->
-        <script src="js/main.js"></script>
+        <!-- <script src="js/main.js"></script> -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
     </head>
+
+
+
+
+
+
+
     <body>
-        <div class="container">
 
-            <header>
-                <div class="container">
-                    <div id="branding">
-                        <img src="img/cat-logo.png" alt="cat logo">
-                        
-                        <h1>Cat Love Blog</h1>
-                    </div><!--branding-->
-
-                    <nav id="mainnav">
+        <header class="showborder" id="header">
+            <div class="showborder" id="branding">
+                <img src="img/cat-logo.png" alt="cat logo">
+                <h1>Cat Love Blog</h1>
+            </div><!--container and branding div-->     
+            <nav class="showborder" id="mainnav">
                         <ul>
                             <li><a href="index.html">Home</a></li>
                             <li><a href="single-post.html">Single Post</a></li>
-                            <li><a href="add-post.html"></a>Add Post</li>
-                        </ul>>
+                            <li><a href="add-post.html">Add Post</a></li>
+                        </ul>
                     </nav>
-                </div><!--container-->
+                   
+        </header><!--mainheader-->    
+
+
+        <article id="primary" class="container mainheader showborder">
+            <header>
+                <form class="showborder">
+                    <input type="text" name="search" id="search" placeholder="search our blog">
+                    <input type="image" src="img/search.png" alt="search-image">
+                </form>
+                    <h2>cats that we love so much</h2>
+                        <div class="meta">posted by <strong>me</strong><span>(2 comments)</span>
+                        </div><!--meta-->
             </header>
+            
+            <div id="wrapper">
+                <img src="img/main-cat.png" alt="main cat pic">
+                    <p class="showborder"><strong>See owner, run in terror under the bed</strong>
+                        Cat ipsum dolor sit amet, stand in front of the computer screen or sun bathe. Annoy owner until he gives you food say meow repeatedly until belly rubs, feels good stand in front of the computer screen cough furball for chew on cable put toy mouse in food bowl run out of litter box at full speed wake up human for food at 4am. Kitty scratches couch bad kitty scratch the furniture with tail in the air run outside as soon as door open nap all day howl uncontrollably for no reason. Purr when being pet friends are not food yet climb a tree, wait for a fireman jump to fireman then scratch his face burrow under covers scratch leg; meow for can opener to feed me for purr for russian blue. Spill litter box, scratch at owner, destroy all furniture, especially couch have my breakfast spaghetti yarn.</p>
+                    <footer class="showborder">
+                        <a href="single-post.html">Read More</a>
+                    </footer>
+            </article>    
+            </div>
+            
+            
+            
 
-
-            <aside id="sidebar">
-                <div class="search">
-                    <form>
-                        <input type="text" placeholder="search our blog"><input type="image" src="img/search.png" alt="search">
-                    </form>
-                </div><!--search-->
-                <div class="clearfix"></div>
+            <div id="wrapper">
+            <aside id="secondary" class="container sidebar showborder">
                 <nav id="subnav">
                     <ul>
                         <li><a href="#">Web Development</a></li>
@@ -57,38 +80,19 @@
                         <li><a href="#">Software</a></li>
                         <li><a href="#">Cloud</a></li>
                     </ul>
-                </nav>
-                <div class="ad">
-                <img src="img/cat-cartoon.png" alt="advertisement">
-                </div>
+                </nav> 
+                <div><img src="img/cat-cartoon.png" alt="advertisement"></div>
             </aside>
+            </div>    
 
 
-            <section>
-                <article>
-                    <header>
-                        <h2>cats that we love so much</h2>
-                            <div class="meta">
-                                posted by <strong>me</strong><span>(2 comments)</span>
-                            </div><!--meta-->
-                        </h2>
-                    </header>
-                    <img src="img/main-cat.png" alt="main cat pic">
-                    <p><strong>See owner, run in terror under the bed</strong>
-                        Cat ipsum dolor sit amet, stand in front of the computer screen or sun bathe. Annoy owner until he gives you food say meow repeatedly until belly rubs, feels good stand in front of the computer screen cough furball for chew on cable put toy mouse in food bowl run out of litter box at full speed wake up human for food at 4am. Kitty scratches couch bad kitty scratch the furniture with tail in the air run outside as soon as door open nap all day howl uncontrollably for no reason. Purr when being pet friends are not food yet climb a tree, wait for a fireman jump to fireman then scratch his face burrow under covers scratch leg; meow for can opener to feed me for purr for russian blue. Spill litter box, scratch at owner, destroy all furniture, especially couch have my breakfast spaghetti yarn.</p>
-                    <footer>
-                        <a class="readmore" href="single-post.html">Read More</a>
-                    </footer>
-                </article>
-            </section>
 
-            <div class="clearfix"></div>
-         <div><!--container-->
+       
          
-         <footer id="main-footer">
+         <footer id="main-footer" class="container showborder">
             <div class="container">
-                <div class="footer-right">
-                    <nav class="footer-nav">
+                <div>
+                    <nav id="footernav">
                         <ul>
                         <li><a href="#" class="active">Home</a></li>
                         <li><a href="#">About Us</a></li>
@@ -99,7 +103,7 @@
                         </ul>
                     </nav>
 
-                    <nav class="footer-nav">
+                    <nav class="footernav">
                         <ul>
                         <li><a href="#" class="active">Web Development</a></li>
                         <li><a href="#">Design</a></li>
@@ -110,11 +114,10 @@
                     </nav>
                 </div><!--footer-right--> 
 
-                <div class="footer-left">
+                <div class="showborder">
                     <p class="copy">Copyright &copy; 2017 Traci Williams</p>
                 </div>
              </div><!--container-->   
-
-         </footer>   
+         </footer><!--main-footer-->   
     </body>
 </html>
